@@ -7,7 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // GANTI DENGAN LINK MONGODB ANDA (Pastikan <db_password> sudah diganti password asli)
-const MONGO_URL = "mongodb+srv://botwa:Akuaku1991@cluster0.l9cw3no.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URL = process.env.MONGO_URL;
+
 
 const dbName = "wa_bot_db";
 const collectionName = "auth_session";
